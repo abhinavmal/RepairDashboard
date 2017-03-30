@@ -15,9 +15,10 @@ See a Demo Video Here: https://youtu.be/sHASm48l38Q
 * Changes in the state of the order are recorded for each session. Changes persist after refresh and across multiple tabs.
 * The current implementation reads input data from a JSON file (`data.json`) to populate the entries in the table.
 * All used images have alternate text for better accessibility of the website.
+* It has currently been TESTED on browsers- Google Chrome (Version 56.0.2924.87 (64-bit)) and Firefox (Version 52.0.2 (64-bit)) on a MAC.
 
 
-## Installation and Dependencies
+## Dependencies and Installation
 
 * Dependencies
   * Python - to run a simple HTTP server on your machine (both python versions 2.x and 3.x should work). Tested on Python Python 2.7.12.
