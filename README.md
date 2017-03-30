@@ -4,6 +4,8 @@ This is an *interactive frontend web design* of a "repairs" dashboard, basis a g
 
 The design uses a table to show all orders with a search box and navigation in the header. Each row represents one repair order and the design uses a host of visual clues (like a background-color, an image on the leftmost column of each row and design of the select box) to indicate the state of each order to the user. All these visual clues are visible or can be seen by interactivity through the select box.
 
+See a Demo Video Here: https://youtu.be/sHASm48l38Q 
+
 
 ## Features
 
@@ -23,7 +25,7 @@ The design uses a table to show all orders with a search box and navigation in t
   * Twitter Bootstrap - (linked in the header of `index.html`)
   * Fontawesome - (linked in the header of `index.html`)
 * Installing and viewing the design in a browser
-  * Download the zip file of the codebase, or clone it into your system using `git clone <path>`
+  * Download the zip file of the codebase, or clone it into your system using `git clone git@github.com:abhinavmal/RepairDashboard.git`
   * Go to the directory that contains `index.html` and from your (Python) command prompt or shell, type `python -m SimpleHTTPServer`. This will start a local server at the default port of `8000`. If it runs, you should see `Serving HTTP on 0.0.0.0 port 8000 ...` on the command prompt or shell.
   * Open any web-browser and in the address bar, type `localhost:8000/`. The design should be visible now.
   * Interact with the webpage by trying to change order state using the select box, searching through the table and changing the screen size of the browser.
