@@ -24,11 +24,14 @@ See a Demo Video Here: https://youtu.be/sHASm48l38Q
   * jQuery - (linked in the header of `index.html`)
   * Twitter Bootstrap - (linked in the header of `index.html`)
   * Fontawesome - (linked in the header of `index.html`)
+ 
 * Installing and viewing the design in a browser
-  * Download the zip file of the codebase, or clone it into your system using `git clone git@github.com:abhinavmal/RepairDashboard.git`
-  * Go to the directory that contains `index.html` and from your (Python) command prompt or shell, type `python -m SimpleHTTPServer`. This will start a local server at the default port of `8000`. If it runs, you should see `Serving HTTP on 0.0.0.0 port 8000 ...` on the command prompt or shell.
+  * Download the zip file of the codebase, or clone it into your system using `git clone https://github.com/abhinavmal/RepairDashboard.git`
+  * Go to the directory that contains `index.html` (`cd RepairDashboard/`)  
+  * From your (Python) command prompt or shell, type `python -m SimpleHTTPServer`. This will start a local server at the default port of `8000`. If it runs, you should see `Serving HTTP on 0.0.0.0 port 8000 ...` on the command prompt or shell.
   * Open any web-browser and in the address bar, type `localhost:8000/`. The design should be visible now.
   * Interact with the webpage by trying to change order state using the select box, searching through the table and changing the screen size of the browser.
+  * See a demo video here for running: https://youtu.be/sHASm48l38Q
 
 ## References
 
