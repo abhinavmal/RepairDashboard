@@ -1,0 +1,171 @@
+
+/* Font for the row-entries in the repairs table */
+@font-face {
+    font-family: 'grit';
+    src:
+        local('grit'),
+        url('fonts/Grit/grit.ttf')
+        format('truetype');
+}
+
+/* Change bootstrap row colors */
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #f7f3e9;
+}
+
+.table-striped>tbody>tr:nth-child(even)>td,
+.table-striped>tbody>tr:nth-child(even)>th {
+   background-color: #ffffff;
+}
+/* End of table changes for Bootstrap */
+
+
+/* Responsive links in the header for an easy finger touch */
+a {
+    min-width: 48px;
+    min-height: 48px;
+    max-width: 25%;
+    display: inline-block;
+    /*margin-left: 5px;*/
+    margin-right: 10%;
+    vertical-align: middle;
+    text-align: justify;
+}
+
+td img{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+
+div a:nth-last-child(1) {
+    margin-right: 0px;
+}
+
+#profileLink {
+    max-width: 100%;
+}
+
+#cancelImg {
+    width: 40px;
+    text-align: center;
+}
+
+#doneImg {
+    width: 30px;
+    text-align: center;
+}
+
+
+/* Custom select div */
+select {
+    border-style: solid;
+    border-color: #502311;
+    border-radius: 5px;
+    width: 150px;
+    height: 100%;
+    padding: 5px;
+    background: url("images/chevron-down2.svg")  no-repeat right;
+    background-size: 30px 100%;
+    background-position-x: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select.in_progress {
+    border-style: solid;
+    border-color: #502311;
+    border-radius: 5px;
+    border-width: 2px;
+    width: 150px;
+    height: 100%;
+    padding: 5px;
+    background: url("images/chevron-down-inprog.svg") no-repeat right;
+    background-size: 30px 100%;
+    background-position-x: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select.cancelled {
+    border-style: solid;
+    border-color:   #BE0F1D;
+    border-radius: 5px;
+    border-width: 2px;
+    width: 150px;
+    height: 100%;
+    padding: 5px;
+    background: url("images/chevron-down2.svg") no-repeat right #fff;
+    background-size: 30px 100%;
+    background-position-x: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select.done {
+    border-style: solid;
+    border-color: #B4B4B4;
+    border-radius: 5px;
+    border-width: 2px;
+    width: 150px;
+    height: 100%;
+    padding: 5px;
+    background: url("images/chevron-down2.svg") no-repeat right;
+    background-size: 30px 100%;
+    background-position-x: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    opacity: 1.0;
+}
+
+
+.header-images {
+    display: inline-block;
+    max-width: 100%;
+    margin-top: 10px;
+    /*margin: 5px;*/
+   /* margin-left: auto;
+    margin-right: auto;*/
+}
+
+.profile-image {
+    margin: 10px;
+    max-width: 90%;
+}
+
+.search-box {
+    border-radius: 20px;
+    margin-top: 1.2em;
+    margin-bottom: 1em;
+}
+
+.header {
+    background-color: #e8b77b;
+    padding-bottom: 2.5em;
+    font-family: 'Lato', sans-serif;
+}
+
+thead {
+    background-color: #502311;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+tbody {
+    font-family: 'grit';
+}
+
+.table-div {
+    border-radius: 2em;
+    background-color: #efefef;
+    border-style: solid;
+    border-color: #fff;
+    z-index: 2;
+    top: -2.5em;
+    position: relative;
+}

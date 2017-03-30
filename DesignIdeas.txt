@@ -1,0 +1,31 @@
+DESIGN IDEAS
+
+-- In this document, I try to put down how I went about replicating the PNG image to an interactive design and
+
+-- suggest some changes from UI/UX perspective in the current design.
+
+Note: I am only suggesting changes here, and have not implemented them in the design. I have tried to replicate the design to match the specification provided.
+
+PROCESS AND DESIGN DECISIONS
+
+- Used online tools to pick the colors provided in the design PNG
+- Identified fonts used in the design spec:
+    * The header and search bar uses the font 'Avenir' (https://www.myfonts.com/fonts/linotype/avenir/) and the table rows use the font 'Fette Mittelschrift'(https://www.myfonts.com/fonts/urw/fette-mittelschrift/)
+    * However, since these fonts are not FREELY available, I decided to user similar looking fonts - 'LATO' (in place of 'AVENIR') and 'GRIT' (in place of'Fette Mittelschrift), which were FREE.
+- Customized the select box using given colors and Fontawesome chevron-down icon.
+- The links/images on the header (Home, Calendar, Inbox) are kept a little bigger so that when they scale to mobile devices, they are easily clickable and differentiable.
+- The session-persistence is implemented using "localStorage" in HTML5. Though "sessionStorage" suits the use case better, but "sessionStorage" does not allow for persistence across browser tabs. So, I used "localStorage".
+
+SUGGESTIONS AND VIEWS ON CURRENT DESIGN
+
+My views are based on my understanding and I am happy to hear contradicitons to them and understand the use-case better :)
+
+- The current design uses THREE visual indicators for order state. OrderState is indicated by "bg-color" of row, leftmost "icon image" and the drop down (select) itself. One can get away with one of these indicators, specifically the leftmost image. Because, the leftmost image is farthest from the select box. So the possibility of the user missing out on seeing a change in that image on changing the orderState via select box is really high (due to low proximity). The heat map will be hottest towards the select bar when the user makes the change and coldest-farthest away from it. So it may not serve any purpose. Moreover, the background clearly indicates orderState.
+
+- The current design uses a select box on every row of the table. This is somewhat heavy (n selects for n rows) and will be hard to work with in case a user wants to change state of multiple rows at once. Providing a check-box on each row and then controlling changes through a column header or a separat button that appears whenever a check box is clicked (something like a Gmail Inbox).
+
+- I think having a Sort function and filter function on certain columns will help. For example, sort on date will help the viewer to see the newest orders. Filter on order type will allow the user to see all incomplete orders, and so on.
+
+- The current design uses a grayed out row for the "Done" state but tries to maintain the "select" box alive with Font color and border at 1.0 opacity (to indicate that one can still change the state of that row/order). There might be confusion here to the user as to whether the select box is still active or not!
+
+- Alternate row colors looks good but does not convey meaning to the user until the user changes state and then the background color does convey some meaning. So I feel it is better to keep one "neutral" state background color for the "In Progress" order state so that the user can easily and quickly "view" it!
